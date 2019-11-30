@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<style type="text/css">
+	.navbar-inverse .navbar-nav>li>a {
+    color: #f10000;
+    font-family: initial;
+    font-size: x-large;
+}
+
+</style>
+
+
+<body>
+	<nav class="navbar navbar-inverse">
+  <ul class="nav navbar-nav">
+		<li><a href="home.php">Home</a></li>
+    <li><a href="add.html">Student Table</a></li>
+     <li><a href="add2.php">Class Table</a></li>
+      <li><a href="index3.php"> View Class Table</a></li>
+	 <li><a href="index2.php"> View Student Table</a></li>
+	 
+      <ul class="nav navbar-nav navbar-right">
+      
+      <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+    </ul>
+   
+  </ul>
+
+</nav>
+	<br/><br/>
+
+	<form action="add.php" method="post" name="form1">
+		<table width="25%" border="0"  class="table table-bordered">
+			<tr> 
+				<td>Student ID</td>
+				<td><input type="text" name="studentid"></td>
+			</tr>
+			<tr> 
+				<td>First Name</td>
+				<td><input type="text" name="fname"></td>
+			</tr>
+			<tr> 
+				<td>Last Name</td>
+				<td><input type="text" name="lname"></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="text" name="gender"></td>
+			</tr>
+			<tr> 
+				<td>Birth Date</td>
+				<td><input type="text" name="birthdate"></td>
+			</tr>
+			<tr> 
+				<td>Address</td>
+				<td><input type="text" name="address"></td>
+			</tr>
+			<tr> 
+				<td>Contact</td>
+				<td><input type="text" name="contact"></td>
+			</tr>
+			<tr> 
+				<td></td>
+				<td><input type="submit" name="Submit" value="Add" class="btn btn-danger"></td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+</html>
+
